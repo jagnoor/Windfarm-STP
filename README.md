@@ -22,7 +22,6 @@
 
 #### Project by Jason, Anh, Paul and Jag 
 
-Windfarm-STP/Screen Shot 2018-09-09 at 10.18.50 AM.png
-    
+
 
 
