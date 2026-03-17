@@ -45,7 +45,7 @@ describe("GET /api/crewPlan", function() {
             crewName: "TorqueCrew", 
             startTime: "1:30", 
             endTime: "2:30", 
-            date: "2018-08-28st Description"
+            date: "2018-08-28"
           });
 
         expect(responseBody[1])
