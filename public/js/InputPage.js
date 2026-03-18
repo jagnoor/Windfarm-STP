@@ -100,7 +100,7 @@ function displayWeather(location) {
 
     // Here we are building the URL we need to query the database
     //var queryURL = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid=" + APIKey;
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + location + ",us&appid=" + APIKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + location + ",us&appid=" + APIKey;
     var htmlElements = '';
 
     // We then created an AJAX call
@@ -160,7 +160,7 @@ function displayWeather(location) {
         $('#weatherWrapper').append(htmlElements);
 
         $(".displayGustWarning").css("display", "none");
-        if ((currentWindGust >= 20) && (isInteger(currentWindGust))) {
+        if ((currentWindGust >= 20) && (Number.isInteger(parseFloat(currentWindGust)))) {
             console.log("wind gust warning");
             $(".displayGustWarning").css("display", "block");
         } else if (isNaN(currentWindGust)) {

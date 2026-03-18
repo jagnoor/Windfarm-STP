@@ -1,13 +1,11 @@
 //This is the model for setting up mysql table via sequelize
 module.exports = function(sequelize, DataTypes) {
   var CrewPlan = sequelize.define("CrewPlan", {
-    turbineNumber:
-    {
+    turbineNumber: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    crewName:
-    {
+    crewName: {
       type: DataTypes.STRING,
       allowNull: false
     },
